@@ -43,7 +43,7 @@ The requirements specify compatible version ranges, not a fully pinned reproduct
 
 The evaluation uses the ATLAS JetSet `mc-flavtag-ttbar-small.h5` file. Dataset download details are in `engines/dg_npor/download_atlas_jetset.py` and `engines/dg_npor/src/por_hep/atlas_jetset.py`.
 
-The repository contains source code; the dataset, trained weights, prediction tables and final experimental outputs are not bundled.
+The repository contains source code and trained weights for 500k jet events; the dataset, prediction tables and final experimental outputs are not bundled.
 
 To evaluate an existing DG-NPOR experiment, retain at least these files together in its model directory:
 
