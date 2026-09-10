@@ -14,8 +14,8 @@ The selected orbital count is data dependent. The code does not impose three orb
 | `engines/dg_npor/src/por_hep/` | JetSet loading, structured tracks, learned geometry and evaluation utilities |
 | `engines/dg_npor/run_self_configuring_nn.py` | DG-NPOR development/training entry point |
 | `engines/dg_npor/scripts/` | Orbital and workflow figures |
-| `engines/paper/src/jetset_litcomp/` | ParticleNet adaptation, training, metrics and report utilities |
-| `run_paper.py` | Saved-model evaluation and paper-report entry point |
+| `engines/paper/src/jetset_litcomp/` | ParticleNet adaptation, training and metrics |
+| `run_paper.py` | Saved-model evaluation entry point |
 | `configs/paths.json` | Legacy input-location candidates; explicit command-line paths take priority |
 | `verification/` | Software checks and original preparation-stage validation record |
 
@@ -41,7 +41,7 @@ The requirements specify compatible version ranges, not a fully pinned reproduct
 
 ## Data and saved artifacts
 
-The paper workflow uses the ATLAS JetSet `mc-flavtag-ttbar-small.h5` file. Dataset download details are in `engines/dg_npor/download_atlas_jetset.py` and `engines/dg_npor/src/por_hep/atlas_jetset.py`.
+The evaluation uses the ATLAS JetSet `mc-flavtag-ttbar-small.h5` file. Dataset download details are in `engines/dg_npor/download_atlas_jetset.py` and `engines/dg_npor/src/por_hep/atlas_jetset.py`.
 
 The repository contains source code; the dataset, trained weights, prediction tables and final experimental outputs are not bundled.
 
@@ -72,7 +72,7 @@ python run_paper.py \
 
 This command retains the saved DG-NPOR model and its selected orbitals. It does not retrain DG-NPOR. To allow training the local ParticleNet baseline when no compatible completed run is available, add `--train-particle-net-if-missing`. The `run_paper.sh` wrapper enables that option automatically.
 
-Use `python run_paper.py --help` for all options. The original Turkish workflow notes are in [README_TR.md](README_TR.md); their local paths and environment names describe the original workspace.
+Use `python run_paper.py --help` for all options.
 
 ## Train a new DG-NPOR experiment
 
@@ -91,17 +91,15 @@ python engines/dg_npor/run_self_configuring_nn.py \
   --output-dir outputs/dg_npor_quick
 ```
 
-This launches training. A quick run is a separate experiment and is not a reproduction of the saved 500,000-jet paper run. Exact reproduction requires the original configuration, split artifacts, model and software environment.
+This launches training. A quick run is a separate experiment and is not a reproduction of the saved 500,000-jet experiment. Exact reproduction requires the original configuration, split artifacts, model and software environment.
 
-## Results and interpretation
-
-The report workflow writes tables, figures and statistics beneath `outputs/paper500k/`, including `paper/TABLE_1_COMPARISON.tex`, `figures/FIGURE_1_REJECTION.pdf`, orbital plots and Overleaf-ready material.
+## Evaluation notes
 
 - All comparison predictions are aligned to the same evaluation jets and labels.
 - GN2v01 and DL1dv01 are pretrained references; this is not a matched training-budget comparison.
 - ParticleNet is the bundled JetSet adaptation, not a claim of exact reproduction of the published implementation.
-- Working-point rejection uses the signal-score quantiles in the evaluation sample; the detailed convention is recorded in the reports and Turkish notes.
-- The included validation records concern software fixtures, not ATLAS performance measurements. Final paper metrics require the real data and experiment artifacts.
+- Working-point rejection uses the signal-score quantiles in the evaluation sample.
+- The included validation records concern software fixtures, not ATLAS performance measurements.
 
 ## Software verification
 
