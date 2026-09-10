@@ -1,0 +1,24 @@
+{
+  "model_dirs": [
+    "~/Downloads/ATLAS_JETSET_DG_NPOR_V9_SELF_CONFIGURING_NN_WORKSPACE/outputs/atlas_jetset_selfconfig_nn_500k",
+    "~/Downloads/DG_NPOR_PAPER_WORKSPACE/outputs/paper500k/dg_npor",
+    "~/Downloads/ATLAS_JETSET_DG_NPOR_V9_SELF_CONFIGURING_NN_WORKSPACE_2/outputs/atlas_jetset_selfconfig_nn_500k",
+    "~/paper/outputs/atlas_jetset_selfconfig_nn_500k",
+    "~/paper/outputs/paper500k/dg_npor"
+  ],
+  "h5_files": [
+    "~/Downloads/ATLAS_JETSET_DG_NPOR_V9_WORKSPACE_3/data/atlas_jetset/mc-flavtag-ttbar-small.h5",
+    "~/Downloads/DG_NPOR_PAPER_WORKSPACE/data/mc-flavtag-ttbar-small.h5",
+    "~/paper/data/atlas_jetset/mc-flavtag-ttbar-small.h5",
+    "~/paper/data/mc-flavtag-ttbar-small.h5"
+  ],
+  "particle_net_dirs": [
+    "~/Downloads/DG_NPOR_PAPER_WORKSPACE/outputs/paper500k/particlenet",
+    "~/Downloads/ATLAS_JETSET_DG_NPOR_PAPER_RESULTS_WORKSPACE/outputs/particlenet_full_500k_paper",
+    "~/Downloads/ATLAS_JETSET_FINAL_LITERATURE_COMPARISON_WORKSPACE/outputs/particlenet_full_500k_paper",
+    "~/Downloads/ATLAS_JETSET_FINAL_LITERATURE_COMPARISON_WORKSPACE/outputs/particlenet_full_500k",
+    "~/paper/outputs/particlenet_full_500k_paper",
+    "~/paper/outputs/paper500k/particlenet",
+    "~/paper/outputs/particlenet_full_500k"
+  ]
+}

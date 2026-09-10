@@ -1,0 +1,83 @@
+{
+  "version": "2026.09.01",
+  "source_archives": {
+    "ATLAS_JETSET_DG_NPOR_PAPER_RESULTS_WORKSPACE.zip": {
+      "sha256": "cd6198cfff8bb6d695bdb51de193b6fe773ec1aeeff320e770963e29b0be21a0",
+      "bytes": 50548
+    },
+    "ATLAS_JETSET_DG_NPOR_V9_SELF_CONFIGURING_NN_WORKSPACE.zip": {
+      "sha256": "2e0e028d173a20a159cb7b663984d032a8de6bdf87bf9c288d6fa03babce32fd",
+      "bytes": 209540
+    },
+    "POR_DGNPOR_V9_FUNDAMENTAL_VALIDATION_V4.zip": {
+      "sha256": "622f523897c0e5f9fa4ec4728cdb1f6090aa2a75066030d0539292f8a51c85b1",
+      "bytes": 197849
+    },
+    "ATLAS_JETSET_FINAL_LITERATURE_COMPARISON_WORKSPACE.zip": {
+      "sha256": "3366d4ed68d4431435ba9d1f1ee96321b2b32943e6ce2e7e3eb8e9b239e4fee4",
+      "bytes": 33449
+    }
+  },
+  "unchanged_dg_npor_python": {
+    "compare_multiscale_to_graph_por.py": "ccf21e8d49cfabeba1675979c68fae4a0ba17957fadcbdf3e276cc7b2ba48cac",
+    "run_self_configuring_nn_scan.py": "923169d708e430d05295d16ce68c5a851b28e5e16a1fc58d1a53fc38ee6997b5",
+    "score_locked_test.py": "7e2ec7f1b1f928bbc631a7070833e12e0d62b8b86da69a8261c7db51d390937b",
+    "run_atlas_jetset_por.py": "2f00ff97ac08508a24d6a6ff06cc401a31a7972680e4924ecb53e448bc6bc63f",
+    "run_multiscale_geometry_scan.py": "da4d90d3cd9d6e4d86a585c1746bcea68ec97f6bb8aa9ab27f13aef99b5785b5",
+    "score_self_configuring_locked_test.py": "b49c0b762f1f973547d90da428cd01ab6905a2c24ae5c35312cc7b2fa1bf5802",
+    "score_multiscale_locked_test.py": "af6dd6c84edc2c5536b52f69ecc5f4520ad2fc7dd61f1d1687682f2d14d2cfbc",
+    "score_structured_locked_test.py": "3a1b4bb77860a7a18d6c5b9b078c2322240a7d4a014550f10425f1e0427649dc",
+    "run_self_configuring_nn.py": "469fcb7f9898b0a42da7218fb64a6a037cb5a5918bf3c7ab55d2fdb05eefe7b7",
+    "compare_locked_test_baselines.py": "8aae6b50b7bd2cbb5b8c0af92f1056ba9a60d14402615dbd50a4e6c98a7c10be",
+    "download_atlas_jetset.py": "f59bed6b09da8757cdc426f813e1b9d7d8270fd6f4a1d5375ebb8962dcd72c78",
+    "compare_structured_to_summary_por.py": "69374b8d770d8bd30d3c0c73564a08b22d3d74edb204e1767919c3035095b2f1",
+    "run_structured_track_scan.py": "11b339ec5ff9bb81af4e556e1bbeed7ee9b98f909d3cdc5dbd0cbe54235e36b0",
+    "run_por_improvement_scan.py": "499188496f60cbedab8bdaf6bf5b416a01f567dd8977c61753704f74ea8ac42d",
+    "tests/test_working_point_scan.py": "b2f908d073084bc24265966dc4d58b436fcf3cdb7cd372ee13d0c1f24c0818e4",
+    "tests/test_self_configuring_geometry.py": "5b15bdfb4a5636d0ddbe6af2eda9a3ec88b9bbd45ec5203f70aeda279dbd8d78",
+    "tests/test_densenet201_features.py": "99288858063475c6c414fb4f02a14cec93d270aaa27f47844814d75ff8ecb215",
+    "tests/test_structured_tracks.py": "c60a8ac0f51ed405e2106d8f17f25b655e67d755714d13a793e553df17d6ced8",
+    "tests/test_multiscale_comparison.py": "8312d8ba3d37421a072b037565291a93ecf275dcdfd1eefd620c44625339bbd6",
+    "tests/test_protocol_metrics.py": "043051f57b13dc6263d227343d81ac5dbb30baa3475c7e5d0d74725128c6a7e8",
+    "tests/test_derivative_gated_dimension.py": "c076076ff03188c5e08c851ed1b64c98da5ae0b8a7dcf8c72647440c8fafce2c",
+    "tests/test_neural_geometry.py": "6a47f60b322a3a0118a7e31e8872321680726097609d8390c8111bff8fe03f0a",
+    "tests/test_readout_optimizer.py": "f1e09fcc1d88734aca580cc258955001b6b5f76a911ae72fef05129d85b7e7f1",
+    "tests/test_paper_ttbar_comparison.py": "538688b4cb28df0a694fe850cb6e576aa2f62284f16c7a0f7a8081c339a7082e",
+    "tests/test_higgs_compact_features.py": "b18ba422f2da3c930cca30099e4eeb57786d1fdc34678b2adc0112252022d71b",
+    "tests/test_predictive_field_dimension.py": "05b62d9e25a8306383e1e05957e3504dae0a448c95c3eb5e679768bae63fdc72",
+    "tests/test_atlas_jetset.py": "0bcd7aa929377294310d54a968f94fb152f023eb4f0892db6343adf3868ed45e",
+    "tests/test_data.py": "eae354b22f206974b38d44f4208dd4f3bb7fac4e0a7e9d4fe711f0ccd551dc2f",
+    "tests/test_flavour_metrics.py": "91e5f5a3f73a412dfe910a575013967062d5808b0b281a7499db56e96338e673",
+    "scripts/plot_input_vs_k3_orbitals.py": "74a6255b86ee6948cad63ad3e0d936b7f440c19e878e6f65966915c4cd5bee9e",
+    "scripts/plot_dg_npor_workflow.py": "e069eef1c8ee039f9103fcd37e689b79ad42f9d411becdf607de8861addb8f0a",
+    "scripts/verify_install.py": "e1b9267dffb5e2324783913e65a7f5441fdffe1d6fce7f050ef29f318dc0bfdd",
+    "examples/_v9_experiment_backend.py": "487473efddf7be2946c04af06f2b87e1694b2f297088420e1fae3f6956db8b3e",
+    "examples/run_densenet201_derivative_gated_por.py": "f6aa636526b5762b5c7b9061e6ad5da68d0102a229be60b32bedd6347019b697",
+    "examples/run_atlas_higgs_derivative_gated_por.py": "1bfcccec24eec296346408b29d63ec7f5617d0b56611e4364628931ac060bee8",
+    "examples/run_susy_derivative_gated_por.py": "05e25cc7800815839d5a43917630c24e97e70ee9923d2ae837eb198effad3320",
+    "src/por_core/graph.py": "5c7eb2693ff467c4a5566975c3c2b10cf8176f1e3eff760ab1ce3df3eddfdb2c",
+    "src/por_core/risk_audit.py": "a4d700b2e89a04f87ee32ca5568a9bc720d3a79bf9188ead3090084983cc9779",
+    "src/por_core/working_point_scan.py": "5672ae09f768aba994da79e3a7f02777cdceb3cd438d8676953f356b6d434607",
+    "src/por_core/readout.py": "f32bf311f87a3f19a79f730d3f10a94324fdd22fe85f3556ca09d8ab9445d9b7",
+    "src/por_core/derivative_gated_dimension.py": "8609e11b26c82c0c53dd013af5157c66634711ffb37385602b0326e11b1af8d1",
+    "src/por_core/orbitals.py": "6de3f817111aeb1010d5a77a95457ae196a6e3ddfc36b422e7006dea18253454",
+    "src/por_core/predictive_field_dimension.py": "ccd6129c63e5d0bcbdbca9452ecfa8fe5c42c3dfb645cce2ca1dcff9e4e36e6f",
+    "src/por_core/information.py": "7539d53fd4fcd455a972745a0c68aa92d6858f470b2614c20153284509b77eb0",
+    "src/por_core/estimator_derivative_gated.py": "63ce5b7f590976674200ce54bef45f1ba5dece757c501db8f0e412179f1cc9c7",
+    "src/por_core/neural_geometry.py": "a4fbea0e22f9116419db97695d3e50518292a2e97e6c38fbcb41fa762910997e",
+    "src/por_core/operator.py": "231bc46323fe0cff2e6351ff5b13f94479057d5193e19bc9d8b2af86684a1d90",
+    "src/por_core/__init__.py": "57c76fee1b4d5f37784ad238976947e9272ac07e96bd4a099c1faf6a69d91809",
+    "src/por_hep/atlas_jetset.py": "3e1b12603a806d106ab0fa976312a9dd556f94def7e36d8c2ae6712b1f775eb1",
+    "src/por_hep/susy_features.py": "6b546d8265576dc95cbb6956fcad9aea568d896a482b7f9f9e1033ed79f13499",
+    "src/por_hep/flavour_metrics.py": "41e1c091f8cd63b72bde0e5a8e4d2d0b6efdc08ce3df5d780a20a03722ebf215",
+    "src/por_hep/structured_tracks.py": "e4d352b6ddb3e9ab7e4e0221d5cf1b1af0f1abc366b5b1ca5308d19b97a40481",
+    "src/por_hep/data.py": "e49da32850bf3f3c46549503c11dae27b411a68215396a9b01e8e2b5b936ddcc",
+    "src/por_hep/metrics.py": "03c8657bf2f9a24e30fd5bfed53354a9f2c17b0391fa7b6418046899bf4a68db",
+    "src/por_hep/densenet_features.py": "3a085824f203d99d8ba1e6a96e1f035a28f5a35850b46c5362c9435925f42644",
+    "src/por_hep/higgs_compact_features.py": "8d6a02dce9d26143efb4480ecec9533eaecffbfbb8f7dac4730b1d4b0d770407",
+    "src/por_hep/self_configuring_geometry.py": "60b903277f016d02863f9749ce0f493bb4578bc79c0d0b0679f790ba62c5f2fe",
+    "src/por_hep/__init__.py": "002cdbcfc204dedca884ba761f1a3a016009fe6b8164ccac2daaaabfad11713e",
+    "src/por_hep/protocol.py": "7e5ab6f03e31aa33d29c0b85ea7170903727aadfc0273f2c281f44c09e720fd5",
+    "src/por_hep/physics_features.py": "d12c7dda613aec23692d5285bb48dc636086bf7d4f6d9dfae1f23b7104fe5034"
+  }
+}

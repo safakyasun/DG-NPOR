@@ -1,0 +1,39 @@
+{
+  "scope": "Software and document-layout validation only; not real JetSet performance",
+  "real_user_h5_or_weights_available": false,
+  "tests": {
+    "passed": 7,
+    "seconds": 7.71,
+    "test_file": "verification/test_paper.py"
+  },
+  "verified": [
+    "Real HDF5-format fixture reading and official-file rejection for fixtures",
+    "Actual full ParticleNet architecture trained for one fixture epoch on CPU",
+    "Exact source/event/label alignment",
+    "Four-method end-to-end report generation",
+    "Frozen DG model file unchanged",
+    "Cached re-export without track reads or model fitting",
+    "Missing ParticleNet fails instead of publishing an incomplete comparison",
+    "Different experiment context rejected",
+    "Zero-mistag rejection reported with a lower bound",
+    "Standalone LaTeX preview compiles without undefined references or overfull boxes",
+    "Final rendered preview inspected visually",
+    "Python 3.10 syntax parsing and bash wrapper help/syntax"
+  ],
+  "original_DG_source_identity": {
+    "files": 60,
+    "changed": [],
+    "source_tree_sha256": "22c48c2eb642ab21bd5d51469ee740b674780d4236adbac36a9d08a356923ae3"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.5.1+cpu",
+    "tested_device": "cpu"
+  },
+  "limitations": [
+    "Real 500k performance must be generated on the user machine.",
+    "The known local ParticleNet adaptation is preserved; it is explicitly labeled.",
+    "CUDA/MPS execution was not exercised in the preparation session."
+  ],
+  "synthetic_performance_artifacts_in_deliverable": false
+}
