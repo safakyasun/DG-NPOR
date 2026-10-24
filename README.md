@@ -110,4 +110,3 @@ python -m pip install -r requirements_training.txt pytest
 python -m pytest verification/test_paper.py -q
 ```
 
-The full fixture integration requires PyTorch. These checks do not validate the physics performance of a trained model.
